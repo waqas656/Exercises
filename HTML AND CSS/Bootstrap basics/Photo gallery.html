@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        div h1 {
+            margin-bottom: 30px;
+        }
+
+        .jumbotron {
+            margin-top: 30px;
+        }
+
+        body {
+            padding-top: 70px;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-dark .navbar-nav .active > .nav-link {
+            /* active state of a link, we can find these exact classes by inspect element and see what is overriding our styles */
+            color: orange;
+        }
+        .img-thumbnail {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="camera.png" width="30" height="30" alt="Bootstrap Img">
+                    IMGx
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- this id(navbarSupportedContent) helps identify which elements to collaps on navbar -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- mr-auto - margin right auto to set elements on left side, ml-auto will set elements to right -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- ml-auto (margin-left auto) sets the below 2 elements on right side of navbar -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light my-2 my-sm-0 mr-sm-2" type="button">Sign Up</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="button">Log In</button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1><img src="camera.png" width="50px" height="50px" alt=""> Image Gallery</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore rem aliquam doloribus itaque, aut,
+                obcaecati numquam autem assumenda quia expedita perferendis deleniti in minima eveniet a fuga quis
+                maxime necessitatibus!</p>
+            <button class="btn btn-primary btn-lg">Learn More</button>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <img class="rounded img-fluid img-thumbnail" src="photo gallery images/arian-darvishi-wh-RPfR_3_M-unsplash.jpg">
+            </div>
+
+
+            <div class="col-lg-4 col-sm-6">
+                <img class="rounded img-fluid img-thumbnail" src="photo gallery images/austin-distel-gUIJ0YszPig-unsplash.jpg">
+            </div>
+
+
+            <div class="col-lg-4 col-sm-6">
+                <img class="rounded img-fluid img-thumbnail" src="photo gallery images/markus-spiske-b6NTA4OtSwQ-unsplash.jpg">
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <img class="rounded img-fluid img-thumbnail" src="photo gallery images/daniel-koponyas-Su6WF0MduyE-unsplash.jpg">
+            </div>
+
+
+            <div class="col-lg-4 col-sm-6">
+                <img class="rounded img-fluid img-thumbnail" src="photo gallery images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg">
+            </div>
+
+
+            <div class="col-lg-4 col-sm-6">
+                <img class="rounded img-fluid img-thumbnail" src="photo gallery images/zan-yBEUD8SWABc-unsplash.jpg">
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+                <img class="rounded img-fluid img-thumbnail" src="photo gallery images/markus-spiske-b6NTA4OtSwQ-unsplash.jpg">
+            </div>
+
+
+            <div class="col-lg-4 col-sm-6">
+                <img class="rounded img-fluid img-thumbnail" src="photo gallery images/austin-distel-gUIJ0YszPig-unsplash.jpg">
+            </div>
+
+
+            <div class="col-lg-4 col-sm-6">
+                <img class="rounded img-fluid img-thumbnail" src="photo gallery images/markus-spiske-b6NTA4OtSwQ-unsplash.jpg">
+            </div>
+
+        </div> 
+
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .pink {
+            background-color: pink;
+            border: 1px solid purple;
+        }
+        #secondDiv {
+            margin-top: 30px;
+        }
+        .orange {
+            background-color: orange;
+            border: 1px dashed purple;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">COLUMN 1</div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink" >COLUMN 2</div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">COLUMN 3</div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 pink">COLUMN 4</div>
+        </div>
+
+        <!-- or -->
+
+        <!-- Both divs behave the same way even if we remove colg-lg and col-xs bcoz bootstrap will guess it on its own -->
+
+        <div id="secondDiv" class="row">
+            <!-- we gonna split first column into further 2 columns (Nested frid) -->
+            <div class=" col-md-3 col-sm-6  pink">
+                <div class="row">
+                    <div class="col-lg-6 orange">COL A (1st)</div>
+                    <div class="col-lg-6 orange">COL A (2nd)</div>
+                </div>
+            </div>
+            <div class=" col-md-3 col-sm-6  pink" >COLUMN B</div>
+            <div class=" col-md-3 col-sm-6  pink">COLUMN C</div>
+
+            <!-- Dividing this column into further 6 columns (Nested Grid) -->
+            <div class=" col-md-3 col-sm-6  pink">
+                <div class="row">
+                    <div class="col-lg-2 orange">D1</div>
+                    <div class="col-lg-2 orange">D2</div>
+                    <div class="col-lg-2 orange">D3</div>
+                    <div class="col-lg-2 orange">D4</div>
+                    <div class="col-lg-2 orange">D5</div>
+                    <div class="col-lg-2 orange">D6</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

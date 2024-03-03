@@ -1,0 +1,57 @@
+/* Element */
+li {
+    /* color: orange; */
+}
+
+/* Id (it selects 1 element only)*/
+#mainHeading {
+    /* color: indigo; */
+}
+
+/* Class (it selects multiple elements with same class name)*/
+.veg {
+    /* color: lightseagreen; */
+}
+
+/* Star (It selects all elements on page)*/
+* {
+    border: 1px solid lightgray;
+}
+
+/* Descendant selector */
+li a {
+    /* all anchor tags inside (that are child of) li so h4's color wont change but a tags inside li will change*/
+    color: green;
+}
+
+/* Adjacent Selector (elements that are side by side on same level) */
+h4 + ul {
+    /* This means all the ul that are next to (adjacent, NOT child) h4 which are on the same level */
+    border: 4px solid red;
+}
+
+/* Attribute Selector (It selects elements based off of their attributes
+e.g href attribute for <a> tag or all <input> tags with attribute of type=text) */
+a[href = "https://www.google.com"] {
+    /* In this case only google tags' color is being changed */
+    color: orange;
+}
+
+/* or */
+input[type=text] {
+    border-color: green;
+}
+
+/* n-th of type (It selects based on type and the number e.g select 5th div or 3rd ul)*/
+ul:nth-of-type(3){
+    background-color: lightgray;
+}
+
+ul:nth-of-type(5){
+    background-color: lightgray;
+}
+
+li:nth-of-type(odd){
+    /* Select every odd in a group of li */
+    background-color: lightgreen;
+}

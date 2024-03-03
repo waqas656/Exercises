@@ -1,0 +1,44 @@
+h1{
+    color: green;
+    text-align: center;
+    text-decoration: underline;
+}
+
+td{
+    padding: 50px;
+    /* border: 2px solid black; */
+}
+
+/* .botRight {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.bot{
+    border-bottom: 1px solid black;
+}
+
+.right {
+    border-right: 1px solid black;
+} */
+
+
+ /* Or */
+
+
+ .vertical {
+     border-left: 1px solid black;
+     border-right: 1px solid black;
+ }
+
+ .horizontal {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+ }
+
+
+
+table {
+    /* this aligns it in center by setting auto only */
+    margin: auto;
+}

@@ -1,0 +1,108 @@
+#loader1, #loader2, #loader3 {
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: 1px solid gray;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*FOR LOADER 1 AND LOADER 2*/
+.loadingcircles {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+
+/*LOADER 1*/
+.dot1 {
+    background-color: #23A9F2;
+    animation: moveup 1s ease-in-out 0s infinite;
+}
+
+.dot2 {
+    background-color: #23A9F2;
+    animation: moveup 1s ease-in-out 0.33s infinite;
+}
+
+
+.dot3 {
+    background-color: #23A9F2;
+    animation: moveup 1s ease-in-out 0.66s infinite;
+}
+
+
+/*LOADER 2*/
+.dot4 {
+    background-color: #23A9F2;
+    animation: fadecircles 1s ease-in-out 0s infinite;
+}
+
+.dot5 {
+    background-color: #23A9F2;
+    animation: fadecircles 1s ease-in-out 0.33s infinite;
+}
+
+.dot6 {
+    background-color: #23A9F2;
+    animation: fadecircles 1s ease-in-out 0.66s infinite;
+}
+
+
+/* LOADER 3*/
+.circle {
+    width: 100px;
+    height: 100px;
+    border-left-color: orange;
+    border-right-color: #1EA362;
+    border-top-color: #CAD2D9;
+    border-bottom-color: #CAD2D9;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 20px;
+
+    animation: rotatecircle 2s linear infinite alternate;
+}
+
+
+/*KEY FRAMES*/
+
+/*for loader 1*/
+@keyframes moveup {
+    0%, 75%, 100% {
+      transform: translateY(0);
+    }
+  
+    25%{
+      transform: translateY(-20px);
+    }
+  }
+
+  /*for loader 2*/
+@keyframes fadecircles {
+    0% {
+      opacity: 1;
+    }
+  
+    50%{
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}
+
+/*for loader 3*/
+@keyframes rotatecircle {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+

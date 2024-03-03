@@ -1,0 +1,41 @@
+
+/* Transform scale lets you change the size of an element (it also scales the border width) */
+
+p {
+    height: 50px;
+    width: 50px;
+    background-color: #1abc9c;
+    color: #ecf0f1;
+    border: 2px solid #2c3e50;
+}
+
+.transformed {
+    margin-top: 50px;
+    background-color: #3498db;
+    transform: scale(2);
+}
+
+.transformed2 {
+    margin-top: 50px;
+    background-color: #3498db;
+    transform: scaleX(2);
+}
+
+.transformed3 {
+    margin-top: 50px;
+    background-color: #3498db;
+    transform: scaleY(2);
+}
+
+.transformed4 {
+    margin-top: 100px;
+    background-color: #3498db;
+    transform: scale(2, 4);  /* doing scaleX and Y in single line */
+}
+
+.transformedFixedFromNewOrigin {
+    margin-top: 100px;
+    background-color: #3498db;
+    transform: scale(2);
+    transform-origin: top left; /*origin to where transformation should happen from which in this case is top left */ 
+}

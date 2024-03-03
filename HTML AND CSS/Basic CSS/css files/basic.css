@@ -1,0 +1,23 @@
+h1 {
+    /* RGBA(RED, GREEN, BLUE, ALPA) where alpha is trasparency from 0 to 1 being the highest */
+    color: rgba(250, 12, 12, 0.3);  
+}
+
+h3{
+    background: #DC4E41;
+}
+
+li {
+    color:#16A05D;
+
+    /* border-color: red;
+    border-width: 1px;
+    border-style: solid; */
+    border: 3px solid red;
+}
+
+body {
+    background: url(https://www.abcworldwidestone.com/wp-content/uploads/2018/03/Woodgrain-Black-Polished-3cm-Lot-B3305-Slab-39-Close-Up-1024x653.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,24 @@
+
+/*Transform lets you move, warp, rotate and scale (change size) of elements */
+
+div {
+    height: 50px;
+    width: 50px;
+    background-color: #1abc9c;
+    margin-bottom: 20px;
+}
+
+div.move-right {
+    background-color: orange;
+    transform: translateX(100px);
+}
+
+div.move-down {
+    background-color: olivedrab;
+    transform: translateY(200px);
+}
+
+
+div:hover {
+    transform: translate(20px, 20px); /*both a and y in same function*/
+}

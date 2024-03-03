@@ -1,0 +1,29 @@
+.container {
+    background-color: #323233;
+    height: 100vh;
+    width: 360px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    padding: 10px 10px 10px 0;
+}
+
+li:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+}

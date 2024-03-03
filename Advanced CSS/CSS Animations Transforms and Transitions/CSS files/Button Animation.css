@@ -1,0 +1,31 @@
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    background-color: #fcad26;
+    font-size: 16px;
+    font-weight: 300px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 25px 80px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 6px #efa424; /* x-offset y-offset color */
+}
+
+.btn:hover {
+    box-shadow: 0 4px #efa424;
+    top: 2px;   /*  bcoz of relative position we moving 2px down from top  */
+}
+
+.btn:active {
+    box-shadow: none;
+    top: 6px;   /*  bcoz of relative position we moving 2px down from top  */
+}
+
+body {
+    background-color: #fcd04b;
+}

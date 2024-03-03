@@ -1,0 +1,56 @@
+.item {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    border: 1px solid gray;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+div.item img {
+    max-width: 100%;
+    vertical-align: top;
+    height: 210px;
+}
+
+div.item * {
+    transition: all 1s ease-in-out;
+}
+
+div.item i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    font-size: 35px;
+    color: #000000;
+    width: 60px;
+    background-color: #ffffff;
+    transform: scale(0) translate(-50%, -50%);
+}
+
+div.item:hover img {
+    opacity: 0.3;
+    filter: grayscale(100%);
+}
+
+div.item:hover i {
+    transform: scale(1) translate(-50%, -50%);
+}
+
+.blue {
+    background-color: #007ACC;
+}
+
+.green {
+    background-color: #1AA15F;
+}
+
+body {
+    width: 100%;
+    margin: 20px 50px;
+}

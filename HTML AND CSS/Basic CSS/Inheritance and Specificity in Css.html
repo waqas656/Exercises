@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inheritance and Specificity</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style type="text/css">
+        body{
+            /* it will change color of every element inside body to red. This is inheritance */
+            color: red;
+        }
+        ul {
+            /* This will change color of all li inside ul to green bcoz ul is more 
+            specific than the general 'body'. This is called Specificity */
+            color: green;
+        }
+        li {
+            /* Now li is more specific than ul so this color will be applied to li instead of above
+             green color */
+             color: brown;
+        }
+        .highlightClass {
+            /* class is even more specific than nested elements */
+            color: orange;
+        }
+        #special {
+            /* an ID is the most specific so this color will be applied to that element with 'special' id */
+            color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>HELLO !!!</p>
+
+    <ul>
+        <li>Paul</li>
+        <li class="highlightClass">Rooschache</li>
+        <li id="special">Gabbana</li>
+        <li class="highlightClass">Cappacino</li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+
+/* Give body a background color of gray */
+body {
+    background-color: gray;
+}
+
+/* Give all h2 orange color */
+h2 {
+    color: orange;
+}
+
+
+/* make inputs with type text have lime background */
+input[type=text] {
+    background-color: lime;
+}
+
+input[type=password] {
+    background-color: red;
+}
+
+/* Make all the <p>'s nested inside div 25px font size */
+div p {
+    font-size: 25px;
+}
+
+
+/* Give both 'p' inside 3rd div a background of pink */
+div:nth-of-type(3) p {
+    background-color: pink;
+}
+
+
+/* Give 2nd 'p' inside 3rd div a 5px white border */
+div:nth-of-type(3) p:nth-of-type(2) {
+    border: 5px solid white;
+}
+
+
+/* Make the <em> in 3rd div element white and 35px font */
+div:nth-of-type(3) em {
+    color: white;
+    font-size: 35px;
+}
+
+
+/* Make all "checked" checkboxes have a left margin of 50px*/
+input[type = checkbox]:checked {
+    margin-left: 50px;
+}
+
+/* Make all the labels uppercase using css */
+label {
+    /* text-transform: capitalize; this only changes only first letter to capital */
+    text-transform: uppercase;
+}
+
+
+/* Make first letter of element with id 'special' green and 100px font size */
+#special span {
+    color: green;
+    font-size: 100px;
+}
+
+/* or */
+
+#special2::first-letter {
+    color: green;
+    font-size: 100px;
+}
+
+
+/* Make the <h1> color change to blue when hovered over */
+h1:hover{
+    color: blue;
+}
+
+
+/* Make the <a> elements green that have been visited */
+a:visited{
+    color: green;
+}

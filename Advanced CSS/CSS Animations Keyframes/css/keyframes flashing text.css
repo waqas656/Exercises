@@ -1,0 +1,43 @@
+@keyframes rainbowtext {
+    0% {
+        color: red;
+        /* font-size: 20px; */
+        transform: scale(0);
+    }
+
+    25% {
+        color: cadetblue;
+        /* font-size: 30px; */
+        transform: scale(1);
+    }
+
+    50% {
+        color: green;
+        /* font-size: 50px; */
+        /* transform: translateY(400px); */
+        transform: scale(2);
+    }
+
+    75% {
+        color: darkblue;
+        /* font-size: 30%; */
+        transform: scale(3);
+    }
+
+    100% {
+        color: brown;
+        /* font-size: 20px; */
+        transform: scale(4);
+    }
+}
+
+p {
+    animation-name: rainbowtext;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+
+    margin: 50px auto;
+    width: 50px;
+}

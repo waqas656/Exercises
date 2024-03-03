@@ -1,0 +1,49 @@
+
+/* Transition allows us to control animation speed when changing css properties .e.g double the size of div in 3 seconds */
+
+p {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: purple;
+    text-transform: uppercase;
+    line-height: 140px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+ p:hover {
+    margin-top: 200px;
+    background-color: teal;
+    transform: rotate(-45deg) scale(2);
+    transform-origin: top left;
+    border-radius: 100px;
+}
+
+.animated {
+    transition-duration: 2s, 4s, 7s, 5s; /* the time it takes to complete each property's transition */
+    transition-property: background-color, transform, margin-top, border-radius; /* the only properties we want to animate*/
+    transition-delay: 1s, 1s, 1s, 1s; /* specifies the delay for each property after which the transition happens */
+}
+
+/*Uncomment below 2 classes and comment above 2 classes to see transition-timing-function property */
+
+/* .box:hover {
+    transform: translateX(500px);
+}
+
+.animated {
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-timing-function: cubic-bezier(0.050, 0.005, 0.000, 0.870);
+} */
+
+/* Use the last line in above class for custom transition timing function */
+
+/* We can combine all four transition properties in one line using: */
+/* .animated2 {
+    transition: transform 2s ease-in 1s, background-color 2s ease-out 3s;
+} */

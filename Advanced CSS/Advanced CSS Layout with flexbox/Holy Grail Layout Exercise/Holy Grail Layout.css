@@ -1,0 +1,86 @@
+body {
+    border-radius: 5px;
+    margin: 0;
+    min-height: 100vh;
+    font-family: Helvetica;
+
+    display: flex;
+    flex-direction: column;
+    
+
+    /* background-color: #323233; */ /*uncomment this and the style at bottom to add some borders and radius*/ 
+}
+
+header {
+    flex-basis: 100px;
+    background-color: #00B78F;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+
+    display: flex;
+    flex-basis: 400px;
+
+    flex-grow: 1; /*this property fills up the extra space at different heights*/
+    
+}
+
+nav {
+    order: -1; /*to move it to start bcoz all other items have order = 0 by default*/
+
+    background-color: #859B9D;
+
+    flex: 1 1 20%; /*flex-grow flex-shrink flex-basis*/
+    /* flex-basis: 20%;
+    flex-grow: 1; */
+}
+
+article {
+    background-color: #F5513E;
+
+    flex: 4 0 60%;
+    /* flex-basis: 60%; */
+    /* flex-grow: 4; */
+}
+
+aside {
+    background-color: #008EDB;
+
+    flex: 1 1 20%; 
+    /* flex-basis: 20%;
+    flex-grow: 1; */
+}
+
+footer {
+    flex-basis: 100px;
+    background-color: #00B78F;
+}
+
+@media all and (max-width: 640px)
+{
+    main {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    nav { /*moving to the 2nd place coz nav has already order = -1 so we give this 0 to follow the default order of html where article is at 1st place*/
+        order: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+/* main > *, header, footer {
+    margin: 4px;
+    padding: 5px;
+    border-radius: 7px;
+} */

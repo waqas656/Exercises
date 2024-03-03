@@ -1,0 +1,39 @@
+.box {
+    font-size: 50px;
+    width: 300px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
+}
+
+/*
+
+MAIN AXIS: Its direction is according to flex direction (row: left to right, column: top to bottom)
+CROSS AXIS: Its direction is according to main axis (row: top to bot, column: left to right)
+
+*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh; 
+    justify-content: space-between;/*define how space is ditributed between items ALONG MAIN-AXIS*/
+    align-content: space-between; /*define how space is ditributed between 'ROWS' ALONG CROSS-AXIS*/
+    /* align-items: center; */  /*define how space is ditributed between items ALONG CROSS-AXIS*/
+
+    border: 10px solid black;
+    /* height: 300px; */
+}
+
+.box-1 {background-color: khaki;}
+.box-2 {background-color: lawngreen;}
+.box-3 {background-color: lightblue;}
+.box-4 {background-color: lightsalmon;}
+.box-5 {background-color: magenta;}
+.box-6 {background-color: maroon;}
+.box-7 {background-color: blue;}
+.box-8 {background-color: green;}
+.box-9 {background-color: orange;}
+.box-10 {background-color: royalblue;}
+.box-11 {background-color: pink;}

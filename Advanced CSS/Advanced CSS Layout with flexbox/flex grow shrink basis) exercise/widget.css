@@ -1,0 +1,43 @@
+/*reduce the screen size to see results*/
+
+.container { /*Flex Container*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box { /*Flex Item*/
+    background-color: tomato;
+    border: 1px solid black;
+    padding: 25px;
+    color: white;
+    transition: 1s background-color;
+
+    /*Below 2 properties along with flex-wrap does the trick*/
+    flex-basis: 300px; /*each item takes 300px on screen, so if there are 3 items and total screen size when reaches 900px it wraps up coz of this property and flex-grow will force the wrapped element to take up all the space*/
+    /* [NOTE]: without flexbasis each item takes space according to its text length and without flexbases but with flex grow they will cover up the whole space*/
+    
+    flex-grow: 1; /*it forces the items to take up the remaining space*/
+
+    /*we can write above 2 lines along with flex shrink default value in single line*/
+    flex: 1 1 300px;
+}
+
+.box:hover {
+    background-color: #ff0052;
+}
+
+
+
+
+h3 {
+    font-size: 30px;
+}
+
+
+.middle {
+    background-color: green;
+}
+
+body {
+    margin: 0;
+}

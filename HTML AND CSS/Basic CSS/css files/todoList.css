@@ -1,0 +1,25 @@
+body {
+    background-color: orange;
+}
+
+li {
+    border: 2px solid red;
+}
+
+#special {
+    color: green;
+    background-color: yellow;
+}
+
+.others {
+    color: red;
+    background-color: gray;
+}
+
+#firstItem {
+    text-decoration: line-through;
+}
+
+body {
+    display: block;
+}

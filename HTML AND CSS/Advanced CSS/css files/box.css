@@ -1,0 +1,27 @@
+p{
+    /* content - (width and height) */
+    /* This percentage corresponds to parent which in this case is body so 50% of body */
+    width: 50%;
+
+
+    /* border */
+    border: 2px solid blue;
+
+
+    /* padding */
+    padding-top: 30px;
+
+
+    margin-bottom: 100px;
+
+
+}
+
+#firstP{
+    margin-left: 50px;
+}
+
+#secondP {
+    /* top right bot left (and auto decides for itself which in this case make secondP in center)*/
+    margin: 0 auto 0 auto;
+}

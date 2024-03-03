@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jQuery Mathods</title>
+    <script src='jquery-3.5.1.min.js'></script>
+
+    <style>
+        .green{
+            border: 2px solid green;
+        }
+
+        .red {
+            border: 2px solid red;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>jQuery Methods Demo Page (Click me to toggle Li's text and Image, and hover to change Li's text)</h1>
+
+    <h4>text() = textContent</h4>
+    <h4>html() = innerHTML</h4>
+    <h4>val() = .value</h4>
+    <h4>attr() = getAttribute/setAttribute</h4>
+    <h4 id="addCls">addClass() = getAttribute/setAttribute<span id="addClsMsg">[Click here to add green and red style classes]</span></h4>
+    <h4 id="removeCls">removeClass() = getAttribute/setAttribute</h4>
+    <h4 id="toggleCls">toggleClass() = getAttribute/setAttribute <span id="rmvClsMsg">[Add a red or green class first from addClass line and then click to toggle that class]</span></h4>
+
+
+    <input type="text" name="" id="userInput" placeholder="Enter text and press Enter" autocomplete="off">
+
+    <ul>
+        <li>Happy</li>
+        <li id="second"><a href="www.google.com">Sad</a></li>
+        <li>Shappy</li>
+    </ul>
+
+    <img src="imgz/poke2.jpg" width="100" height="100" alt="">
+
+    <script src='js files/textContent and innerHTML.js'></script>
+</body>
+</html>

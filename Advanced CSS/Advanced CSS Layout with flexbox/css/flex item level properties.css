@@ -1,0 +1,56 @@
+.box {
+    font-size: 50px;
+    width: 300px;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px;
+}
+
+/*
+
+MAIN AXIS: Its direction is according to flex direction (row: left to right, column: top to bottom)
+CROSS AXIS: Its direction is according to main axis (row: top to bot, column: left to right)
+
+*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 10px solid black;
+    height: 300px;
+    flex-grow: 1; /*if flex grow isnt assigned to any of items then they dont cover the remaining empty space*/
+    flex-wrap: wrap;
+}
+
+.box-1 {
+    background-color: khaki;
+    order: 11; /* by default everything has order = 0 so if we give something the order value greater than 0 it will move to end and also we can assign each item an order number and arrange them according to that*/
+}
+
+.box-2 {
+    background-color: lawngreen;
+    align-self: flex-start; /*it overrides align-items (container level property) on individual items*/
+}
+.box-3 {background-color: lightblue;}
+.box-4 {background-color: lightsalmon;}
+.box-5 {
+    background-color: magenta;
+    align-self: stretch;
+}
+.box-6 {background-color: maroon;}
+.box-7 {background-color: blue;}
+.box-8 {
+    background-color: green;
+    align-self: flex-end;
+    flex-grow: 2; /*It uses more of the remaining space than other items (to test, remove all the items except this and any other)*/ 
+}
+.box-9 {
+    background-color: orange;
+    flex-grow: 3; /*It uses 1 times more space than box-8 coz it has one value greater than box-8 (to test, remove all the items except this box, box-8 and 1 other)*/
+} 
+.box-10 {background-color: royalblue;}
+.box-11 {
+    background-color: pink;
+    order: -1; /* by default everything has order = 0 so if we give something the order value less than 0 it will move to start*/
+}

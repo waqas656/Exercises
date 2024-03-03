@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    justify-content: right;
+    flex-direction: row; /*default is also row but we put it here just for clarity*/
+
+    border: 3px solid pink;
+}
+
+
+
+a {
+    font-size: 30px;
+    text-decoration: none; /* to remove underline anchor tag default style*/
+    font-family: raleway;
+    border-bottom: 2px solid lightcoral;
+    color: gray;
+    margin: 20px;
+    transition: color 0.5s ease-out;
+}
+
+i {
+    margin-right: 5px;
+}
+
+i:active, a:active {
+    color: green;
+}
+
+i:hover, a:hover {
+    /* font-weight: bold; */
+    color: green;
+    border-bottom: 2px solid green;
+}
+
+body {
+    margin: 0;
+}
+
+/*ALWAYS WRITE MEDIA QUERIES AT END SO IN THIS CASE IF WE WRITE a {}'s default css after this media query then this wont work */
+@media screen and (max-width: 900px) 
+{
+    .container {
+        justify-content: center;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+}
+
+/*mobile size*/
+@media screen and  (max-width: 500px)
+{
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        background-color: darkgray;
+    }
+    a {
+        font-size: 16px;
+        color: white;
+    }
+
+}

@@ -1,0 +1,24 @@
+
+/*It rotates the element according to the given degrees*/
+
+p {
+    height: 50px;
+    width: 50px;
+    background-color: #1abc9c;
+    color: #ecf0f1;
+    border: 2px solid #2c3e50;
+}
+
+.transformed-rotated {
+    background-color: orange;
+    color: black;
+    transform: rotate(-45deg);
+}
+
+.transformed-rotated-around-new-point {
+    margin-top: 50px;
+    background-color: orange;
+    color: black;
+    transform: rotate(-45deg) scale(2); /* we can apply 2 transforms at once but we have to apply them on one line otherwise second transform will override it */
+    transform-origin: top right; /* center point is top right corner around which it will rotate -45 degrees */
+}
